@@ -1,0 +1,89 @@
+.hero {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.636);
+  background-color: rgba(245, 222, 179, 0.527);
+  position: relative;
+  margin-top: 3rem;
+}
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 1.1;
+  padding-left: 2rem;
+}
+.left h2 {
+  color: black;
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: cursive;
+}
+.left p {
+  color: #000000;
+  font-weight: 500;
+  font-size: 4rem;
+}
+.hand-icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.hand-icon img {
+  width: 100px;
+}
+.latest-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: fit-content;
+  border-radius: 75px;
+  margin-top: 30px;
+  color: black;
+  border: 2px solid black;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 1rem;
+  transition: 0.2s ease-in-out;
+}
+.latest-btn:hover {
+  background-color: black;
+  color: white;
+}
+.right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right img {
+  width: 400px;
+}
+.custom-shape-divider-top-1701256467 {
+  position: absolute;
+  bottom: -118px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1701256467 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 118px;
+  /* transform: rotate(180deg); */
+}
+
+.custom-shape-divider-top-1701256467 .shape-fill {
+  fill: rgba(245, 222, 179, 0.527);
+}
