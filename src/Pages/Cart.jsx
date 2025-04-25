@@ -1,4 +1,4 @@
-import CartItem from "../Components/BreadCrums/CartItem/CartItem";
+import CartItem from "../Components/CartItem/CartItem";
 
 const Cart = () => {
   return (

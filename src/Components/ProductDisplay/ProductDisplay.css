@@ -10,13 +10,13 @@
 .image-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 25px;
 }
 .image-list img {
-  height: 137px;
+  height: 100px;
 }
 .main-image {
-  width: 500px;
+  width: 400px;
 }
 .product-display-right {
   margin: 0 70px;

@@ -1,67 +1,81 @@
-.auth-container {
+
+/* General container */
+.login-container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fdfdfd;
+}
+
+/* Form styling */
+.login-form {
   width: 100%;
-  background-color: #fce3fe;
-  padding: 50px;
-}
-.container {
-  width: 580px;
-  background-color: white;
-  margin: auto;
-  padding: 0 60px;
-  margin-bottom: 7rem;
-}
-.container h1 {
-  margin: 20px 0;
-  color: rgb(36, 35, 35);
-  font-family: monospace;
-}
-.auth-fields {
+  max-width: 350px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 1rem;
 }
-.auth-fields input {
-  height: 50px;
-  width: 100%;
-  padding-left: 20px;
-  border: 1px solid #c9c9c9;
+
+/* Title */
+.login-title {
+  font-family: "Georgia", serif;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  display: inline-block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.login-title span{
+  display: inline-block;
+  width: 60px;
+  height: 4px;
+  background-color: black;
+  margin-bottom: -.4rem;
+  margin-left: -1rem;
+}
+/* Input fields */
+input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  border-radius: 4px;
   outline: none;
-  color: #5c5c5c;
-  font-size: 1.1rem;
 }
-.container button {
-  width: 100%;
-  height: 50px;
-  color: white;
-  background-color: #ff4141;
-  margin-top: 30px;
+
+.login-input:focus {
+  border-color: #000;
+}
+
+/* Links below inputs */
+.login-links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.login-links a {
+  color: #000;
+  text-decoration: none;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+.login-button {
+  padding: 0.75rem 1rem;
+  background-color: #000;
+  color: #fff;
+  font-size: 1rem;
   border: none;
-  font-size: 24px;
-  font-weight: 500;
+  border-radius: 4px;
   cursor: pointer;
 }
-.auth-login {
-  margin-top: 20px;
-  color: #5c5c5c;
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-.auth-login span {
-  columns: #ff4141;
-  font-weight: 600;
-}
-.auth-agree {
-    width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 20px;
-  color: #5c5c5c;
-}
-.auth-agree input{
-    width: 20px;
-}
-.auth-agree p{
-    font-size: .8rem;
-    font-weight: 600;
+
+.login-button:hover {
+  background-color: #333;
 }

@@ -1,10 +1,33 @@
 import { useContext } from "react";
 import "./cartItem.css";
-import { ShopContext } from "../../../Context/ShopContext";
-import remove_icon from "../../../Assets/cart_cross_icon.png";
+import { ShopContext } from "../../Context/ShopContext";
+import remove_icon from "../../Assets/cart_cross_icon.png";
+
 const CartItem = () => {
   const { getTotalCartAmount, all_product, cartItems, removeFromCart } =
     useContext(ShopContext);
+
+  const vendorNumber = "233550114976"; // Replace with actual vendor's number
+
+  const sendOrderToWhatsApp = () => {
+    const orderedItems = all_product.filter((item) => cartItems[item.id] > 0);
+    if (orderedItems.length === 0) return alert("Your cart is empty.");
+
+    const messageLines = orderedItems.map((item, index) => {
+      const quantity = cartItems[item.id];
+      const totalPrice = item.new_price * quantity;
+      return `${index + 1}. ${item.name} x${quantity} = $${totalPrice.toFixed(2)}`;
+    });
+
+    const total = getTotalCartAmount();
+    const message = `Hello, I'd like to place an order:\n\n${messageLines.join(
+      "\n"
+    )}\n\nTotal: $${total.toFixed(2)}\nThank you!`;
+
+    const url = `https://wa.me/${vendorNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+  };
+
   return (
     <div className="cart">
       <div className="format-main">
@@ -19,7 +42,7 @@ const CartItem = () => {
       {all_product.map((e) => {
         if (cartItems[e.id] > 0) {
           return (
-            <div>
+            <div key={e.id}>
               <div className="format-main">
                 <img
                   src={e.image}
@@ -64,7 +87,7 @@ const CartItem = () => {
               <h3>${getTotalCartAmount()}</h3>
             </div>
           </div>
-          <button>Proceed to checkout</button>
+          <button onClick={sendOrderToWhatsApp}>Proceed to checkout</button>
         </div>
         <div className="promo-code">
           <p>enter your promo code here</p>

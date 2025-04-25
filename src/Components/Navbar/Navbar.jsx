@@ -19,6 +19,10 @@ const Navbar = () => {
           <Link to="/">Shop</Link>
           {menu === "shop" ? <hr /> : <></>}
         </li>
+        <li onClick={() => setMenu("collections")}>
+          <Link to="/collection"> Cellection</Link>{" "}
+          {menu === "collections" ? <hr /> : <></>}
+        </li>
         <li onClick={() => setMenu("men")}>
           <Link to="/men"> Men</Link> {menu === "men" ? <hr /> : <></>}
         </li>
@@ -30,8 +34,8 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="auth-cart">
-        <Link to="/auth">
-          <button>Login</button>
+        <Link to="/signup">
+          <button>Account</button>
         </Link>
         <Link to="/cart">
           <img src={cartIcon} alt="cart icon" />

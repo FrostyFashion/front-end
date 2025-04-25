@@ -1,23 +1,21 @@
 import "./CSS/Auth.css";
 const Auth = () => {
   return (
-    <div className="auth-container">
-      <div className="container">
-        <h1>Sign Up</h1>
-        <div className="auth-fields">
-          <input type="text" placeholder="username" />
-          <input type="email" placeholder="user email" />
-          <input type="password" placeholder="password" />
-          <button>submit</button>
-          <p className="auth-login">
-            already have account? <span>Login here</span>
-          </p>
-          <div className="auth-agree">
-            <input type="checkbox" name="" id="" />
-            <p>By continuing, I agree to the terms of use and privacy</p>
-          </div>
+    <div className="login-container">
+      <form className="login-form">
+        <h2 className="login-title">
+          Login <span></span>{" "}
+        </h2>
+        <input type="email" placeholder="Email" className="login-input" />
+        <input type="password" placeholder="Password" className="login-input" />
+        <div className="login-links">
+          <a href="#">Forgot your password?</a>
+          <a href="signup">Create account</a>
         </div>
-      </div>
+        <button type="submit" className="login-button">
+          Sign In
+        </button>
+      </form>
     </div>
   );
 };

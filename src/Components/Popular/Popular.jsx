@@ -15,6 +15,7 @@ const Popular = () => {
               name={product.name}
               new_price={product.new_price}
               old_price={product.old_price}
+              id={product.id}
             />
           );
         })}
