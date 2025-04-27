@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import "./cartItem.css";
+import "./CartItem.css";
 import { ShopContext } from "../../Context/ShopContext";
 import remove_icon from "../../Assets/cart_cross_icon.png";
 
@@ -16,7 +16,9 @@ const CartItem = () => {
     const messageLines = orderedItems.map((item, index) => {
       const quantity = cartItems[item.id];
       const totalPrice = item.new_price * quantity;
-      return `${index + 1}. ${item.name} x${quantity} = $${totalPrice.toFixed(2)}`;
+      return `${index + 1}. ${item.name} x${quantity} = $${totalPrice.toFixed(
+        2
+      )}`;
     });
 
     const total = getTotalCartAmount();
@@ -24,7 +26,9 @@ const CartItem = () => {
       "\n"
     )}\n\nTotal: $${total.toFixed(2)}\nThank you!`;
 
-    const url = `https://wa.me/${vendorNumber}?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/${vendorNumber}?text=${encodeURIComponent(
+      message
+    )}`;
     window.open(url, "_blank");
   };
 
