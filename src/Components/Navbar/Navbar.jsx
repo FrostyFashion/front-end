@@ -42,6 +42,12 @@ const Navbar = () => {
         </Link>
         <div className="nav-counter">{getTotalCartItems()}</div>
       </div>
+      <div className="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
     </div>
   );
 };

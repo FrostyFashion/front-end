@@ -86,3 +86,46 @@
 .custom-shape-divider-top-1701256467 .shape-fill {
   fill: rgba(245, 222, 179, 0.527);
 }
+
+@media (max-width: 800px) {
+  .hero {
+    margin-top: 1rem;
+  }
+  .left h2 {
+    font-size: 1.3rem;
+    color: white;
+  }
+  .left p {
+    font-size: 2.5rem;
+    color: white;
+  }
+  .right img {
+    width: 250px;
+  }
+  .custom-shape-divider-top-1701256467 {
+    bottom: -117px;
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    height: max-content;
+    padding: 1rem;
+    background-image: url("../../Assets/hero_img.png");
+    background-position: center;
+  }
+  .latest-btn{
+    border-color: white;
+    color: white;
+  }
+  .left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .right {
+    display: none;
+  }
+}

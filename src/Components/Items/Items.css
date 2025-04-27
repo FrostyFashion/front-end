@@ -12,6 +12,7 @@
 }
 .items img {
   width: 100%;
+  height: 300px;
 }
 /* .items:hover {
   transform: scale(1.05);

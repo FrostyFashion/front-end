@@ -81,3 +81,101 @@
   margin-left: -35px;
   margin-top: -27px;
 }
+.hamburger {
+  width: 30px;
+  height: 20px;
+  background-color: white;
+  padding: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  display: none;
+}
+.hamburger span {
+  width: 100%;
+  height: 3px;
+  display: block;
+  background-color: black;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+
+  .nav-list {
+    min-width: 50%;
+  }
+
+  .nav-list a {
+    font-size: 0.9rem;
+  }
+
+  .auth-cart button {
+    width: 80px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+
+  .auth-cart img {
+    width: 25px;
+  }
+
+  .nav-counter {
+    width: 18px;
+    height: 18px;
+    font-size: 0.7rem;
+    margin-left: -30px;
+    margin-top: -24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    padding: 1rem;
+    padding-right: 3rem;
+    gap: 1rem;
+  }
+
+  .nav-logo {
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .nav-logo img{
+    width: 20px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    display: none;
+  }
+
+  .auth-cart {
+    gap: 10px;
+  }
+
+  .auth-cart button {
+    width: 70px;
+    height: 28px;
+    font-size: 0.7rem;
+  }
+
+  .auth-cart img {
+    width: 22px;
+  }
+
+  .nav-counter {
+    width: 16px;
+    height: 16px;
+    font-size: 0.6rem;
+    margin-left: -25px;
+    margin-top: -20px;
+  }
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 10px;
+  }
+}

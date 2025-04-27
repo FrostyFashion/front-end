@@ -50,3 +50,36 @@
   font-size: 1rem;
   cursor: pointer;
 }
+
+@media (max-width: 500px) {
+  .newsLetter {
+    display: block;
+    padding: 0.5rem;
+    width: 100%;
+    margin: 30px 0;
+  }
+  .newsLetter h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    display: block;
+    width: 100%;
+  }
+  .newsLetter p {
+    text-align: center;
+  }
+  .newsLetter div {
+    margin-top: 30px;
+    width: 100%;
+    border-color: black;
+    outline: none;
+    border: 1px solid black;
+  }
+  .newsLetter div input {
+    border: none;
+  }
+  .newsLetter div button {
+    width: 25%;
+    font-weight: 900;
+  }
+}

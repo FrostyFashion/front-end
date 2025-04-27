@@ -28,3 +28,14 @@
   justify-content: space-between;
   margin-top: 1.5rem;
 }
+
+@media(max-width: 500px){
+  .popular h1{
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+  }
+  .popular-items{
+    justify-content: center;
+    flex-direction: column;
+  }
+}

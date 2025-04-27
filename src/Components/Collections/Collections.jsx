@@ -1,6 +1,6 @@
 import "./Collections.css";
 import all_product from "../../Assets/all_product";
-import heroImage from "../../Assets/hero_img.png";
+import heroImage from "../../Assets/women-3.jpg";
 import Items from "../Items/Items";
 const Collections = () => {
   return (

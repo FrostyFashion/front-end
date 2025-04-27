@@ -6,12 +6,17 @@ import p5_img from "./product_15.png";
 import p6_img from "./product_2.png";
 import p7_img from "./product_17.png";
 import p8_img from "./product_28.png";
+import fashion1 from "./fashion-1.jpg";
+import fashion2 from "./women-3.jpg";
+import women1 from './women-1.webp'
+import kid1 from './kids-2.webp'
+
 
 let new_collections = [
   {
     id: 12,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image: p1_img,
+    image: fashion1,
     new_price: 50.0,
     old_price: 80.5,
   },
@@ -32,7 +37,7 @@ let new_collections = [
   {
     id: 8,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image: p4_img,
+    image: women1,
     new_price: 100.0,
     old_price: 150.0,
   },
@@ -46,7 +51,7 @@ let new_collections = [
   {
     id: 2,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image: p6_img,
+    image: kid1,
     new_price: 85.0,
     old_price: 120.5,
   },
@@ -60,7 +65,7 @@ let new_collections = [
   {
     id: 28,
     name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    image: p8_img,
+    image: fashion2,
     new_price: 100.0,
     old_price: 150.0,
   },
